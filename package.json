@@ -1,0 +1,15 @@
+{
+  "name": "express-basics-01",
+  "version": "1.0.0",
+  "description": "this is a training app to learn express and nodejs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/server.js"
+  },
+  "author": "Muhammad Asif",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}
