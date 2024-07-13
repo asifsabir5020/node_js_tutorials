@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "this is a training app to learn express and nodejs",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon ./src/server.js"
   },

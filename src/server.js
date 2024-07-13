@@ -1,8 +1,5 @@
-const express = require("express")
-
-const languages = [
-    'JavaScript'
-]
+import express from 'express'
+import { languages } from './data/index.mjs'
 
 const app = express()
 
@@ -19,7 +16,8 @@ app.get('/languages', (req, res) => {
 })
 
 app.post('/languages', (req, res) => {
-    languages.push(req.body.language)
+    const id = languages.length + 1
+    languages.push({id : id, name: req.body.language})
     res.json({
         success: true,
         message: "data seved"
